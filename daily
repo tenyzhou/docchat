@@ -1,0 +1,13 @@
+git add .
+git commit -m "feat: 描述你做了什么"
+git push
+
+dir            # 看当前文件夹里有什么文件
+cd 文件夹名     # 进入某个文件夹
+python 文件名.py   # 运行一个 Python 脚本
+
+读文件用 open("article.txt", encoding="utf-8")（中文必须指定编码）
+切分可以先用 split()，再想办法去掉标点（比如用字符串的 replace 把 ，。！？,.!? 替换成空格再 split）
+计数用字典：counts[word] = counts.get(word, 0) + 1
+排序用 sorted(counts.items(), key=lambda x: x[1], reverse=True)
+写文件也用 open("output.txt", "w", encoding="utf-8")
