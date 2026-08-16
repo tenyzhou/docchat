@@ -1,0 +1,18 @@
+# API 密钥
+.env
+*.key
+
+# Python 环境与缓存
+venv/
+__pycache__/
+*.pyc
+.idea/
+
+# 大数据文件（数据集、向量库）
+data/
+*.db
+chroma/
+*.parquet
+
+# 其他
+.DS_Store
