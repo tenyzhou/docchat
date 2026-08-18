@@ -121,7 +121,7 @@ graph.add_conditional_edges("agent", should_continue,
 graph.add_edge("tools", "agent")                                 # 执行完回到思考
 
 app = graph.compile()                                            # 编译成可运行程序
-
+print(app.get_graph().draw_ascii())    # 把图打印出来看！
 if __name__ == "__main__":
     result = app.invoke({"messages": [{"role": "user",
                                        "content": "北京天气怎么样？顺便算一下 (3+5)*2"}]})

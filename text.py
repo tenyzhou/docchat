@@ -1,0 +1,1 @@
+print(app.get_graph().draw_ascii())    # 把图打印出来看！
